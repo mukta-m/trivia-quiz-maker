@@ -1,0 +1,21 @@
+div#header
+	a(href="http://localhost:3000/") Home Page 
+	|
+	a(href="http://localhost:3000/quiz") Create New Quiz 
+	|
+	a(href="http://localhost:3000/users") Users 
+	|
+	br
+	br
+	if session && session.loggedin
+		p #{session.username} - 
+			a(href="/users/" + session.userid) view profile
+	else
+		form(method='POST', action='/login')
+			| Username:
+			input(type='text', name='username', required)
+			br
+			| 	Password:
+			input(type='password', name='password', required)
+			br
+			button(type='submit') Login

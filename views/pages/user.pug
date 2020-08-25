@@ -1,0 +1,25 @@
+html
+	head
+		title Quiz Tracker
+	body
+		include ../partials/header
+	#userProfile
+		| name: #{user.username}
+		br 
+		| total quizzes: #{user.total_quizzes}
+		br 
+		| total score: #{user.total_score}
+		br
+		br
+		if (ownprofile)
+			| turn privacy settings on/off
+			br
+			form(method='POST', action='/save')
+				select(name='privacy')
+					option(value='true') on
+					option(value='false') off
+				br
+				button.btn.btn-primary(type="submit") submit
+			form(method='GET', action='/logout')
+				button.btn.btn-primary(type="submit") logout
+
