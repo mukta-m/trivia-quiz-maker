@@ -6,6 +6,13 @@ A website that allows user w/Mongoose Schema to sign in, have profile and build 
 - [Node.js](https://nodejs.org/en/download/) > 10.16.3
 - [Express.js](https://expressjs.com/en/starter/installing.html) 
 
+### NPM Packages
+- [connect-mongodb-session](https://www.npmjs.com/package/connect-mongodb-session)
+- [express](https://www.npmjs.com/package/express)
+- [express-session](https://www.npmjs.com/package/express-session)
+- [mongoose](https://www.npmjs.com/package/mongoose)
+- [pug](https://www.npmjs.com/package/pug)
+
 ### Instructions
 (under assumption that daemon is running (terminal 1), and database is initialized)
 1. ```mongo``` on terminal 2
