@@ -1,16 +1,21 @@
 # Trivia Quiz Maker
-Website that allows user w/Mongoose Schema to sign in, have profile and build trivia quizzes
+A website that allows user w/Mongoose Schema to sign in, have profile and build trivia quizzes
 ## Getting Started
+
+### Prerequisites
+- [Node.js](https://nodejs.org/en/download/) > 10.16.3
+- [Express.js](https://expressjs.com/en/starter/installing.html) 
 
 ### Instructions
 (under assumption that daemon is running (terminal 1), and database is initialized)
 1. ```mongo``` on terminal 2
 2. ```npm install``` on terminal 3
 3. ```node server.js``` on terminal 3
+4. Navigate to [http://localhost:3000/](http://localhost:3000/)
 
 > Note: cookie expires in 100 000 milliseconds
 
-### Contains:
+### Contains
 ```
     - package.json
     - views
